@@ -1,0 +1,39 @@
+html {
+	font-family: "Open Sans", sans-serif;
+	color: #ffffff;
+}
+
+header {
+	background-color: #3e2a35;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+main {
+	background-color: #3e2a35;
+}
+
+h1 {
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 4px;
+width: 85%;
+font-weight: 800;
+font-size: 35px;
+margin: 5px 5px;
+}
+
+.header-search-input {
+	display: flex;
+	width: 90%;
+}
+
+.foto-finder-logo {
+	margin-right: 5px;
+	margin-left: 5px;
+}

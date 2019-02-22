@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Foto Finder</title>
+</head>
+<body>
+  <header>
+	<h1>Foto<img src="foto-finder-logo.svg" width="40px" height="40px" class="foto-finder-logo">Finder</h1>
+	<input id="search" class="header-search-input" 
+    type="text" placeholder="Search">	
+  </header>
+  <main>
+  	<form action="#">
+      <label class="input-labels" for="foto-title">Title</label>
+      <input class="inputs" id="foto-title" name="foto-title" type="text">
+      <label class="input-labels" for="foto-body">Caption</label>
+      <input class="inputs" id="foto-caption" name="foto-caption" type="text"> 
+      <input type="file" accept=".pdf, .jpg" id="file-input" name="file-input">  
+	  <label for="file">Choose a file</label>
+	  <button class="view-favorites-button">View Favorites</button>
+	  <button class="add-to-albums-button">Add to Album</button>
+    </form>
+  </main>
+  <section class="append-img-section">
+  	
+  </section>
+<script src="main.js"></script>
+<script src="photo.js"></script>
+</body>
+</html>
