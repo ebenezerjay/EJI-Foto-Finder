@@ -1,3 +1,4 @@
+
 html {
 	font-family: "Open Sans", sans-serif;
 	color: #ffffff;
@@ -39,10 +40,14 @@ h1 {
   margin: 5px 5px;
 }
 
+article {
+	margin-top: 10px;
+	background-color: #ffffff;
+	border: 1px solid #3e2a35;
 
-section {
-	background-color:  #3e2a35;
 }
+
+
 .header-search-input {
 	background: url('search-icon-white-copy.png'), linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 88%, rgba(194,193,192,1) 88%, rgba(194,193,192,1) 100%);
 	background-size: contain;
@@ -76,11 +81,11 @@ section {
 #file-input {
 	display: flex;
 	margin-top: 20px;
-	width: 0.1px;
-	height: 0.1px;
+/*	width: 0.1px;
+*/	/*height: 0.1px;*/
 	opacity: 0;
 	overflow: hidden;
-	position: absolute;
+	/*position: absolute;*/
 	z-index: -1;
 }
 
@@ -113,6 +118,10 @@ section {
 	margin: 15px 0px 15px 10px;
 	border-style: none;
 	font-weight: 600;
-
 }
 
+div {
+	display: flex;
+	justify-content: space-around;
+	margin: 0px 10px;
+}

@@ -1,17 +1,26 @@
 class Photo {
-	constructor(id) {
+	constructor(id, title, caption, file, favorite) {
 		this.id = id;
+		this.title = title;
+		this.caption = caption;
+		this.file = file;
+		this.favorite = favorite;
 	}
 
-	saveToStorage() {
-
+	saveToStorage(array) {
+    localStorage.setItem('photo-card', JSON.stringify(array));
 	}
 
-	deleteFromStorage() {
+	// deleteFromStorage() {
 
-	}
+	// }
 
-	updatePhoto() {
+	// updatePhoto() {
+
+	// }
+
+	pullFromStorage() {
+		return JSON.parse(localStorage.getItem('photo-card'));
 
 	}
 }
