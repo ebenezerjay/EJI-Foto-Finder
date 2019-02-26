@@ -4,7 +4,7 @@ class Photo {
 		this.title = title;
 		this.caption = caption;
 		this.file = file;
-		this.favorite = favorite;
+		this.favorite = false;
 	}
 
 	saveToStorage(array) {
