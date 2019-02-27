@@ -15,9 +15,17 @@ class Photo {
 
 	// }
 
-	// updatePhoto() {
+	updatePhoto(id, title, caption) {
+		var fotoArray = this.pullFromStorage();
+    	fotoArray[this.getIndex(id)].title = title;
+    	fotoArray[this.getIndex(id)].caption = caption;
+    	this.saveToStorage(fotoArray);
+	}
 
-	// }
+
+	getIndex(id) {
+    	return this.pullFromStorage().map(photo => photo.id).indexOf(id);
+  	}
 
 	pullFromStorage() {
 		return JSON.parse(localStorage.getItem('photo-card'));
